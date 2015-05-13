@@ -1,0 +1,11 @@
+{
+    "name": "vendor/php-project3",
+    "description": "Description of project PhpProject3.",
+    "authors": [
+        {
+            "name": "Josh",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {}
+}

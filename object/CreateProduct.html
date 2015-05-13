@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Add Product - j.m. rains online </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="bootstrap/bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="bootstrap/bootstrap-3.3.4-dist/css/Color.css" rel="stylesheet" type="text/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"></p>
+                </div>
+                <div class="">                    
+                </div>
+                <div class="float-right">
+                    <section id="login">
+
+                    </section>                                            
+                </div>                
+            </div>
+        </header>
+        <main>
+            <div id="body">
+                <section class="content-wrapper main-content clear-fix">
+                    <form id="searchform" class="form-horizontal" role="form" method="post" action="CreateProduct.php" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="productname" class="col-sm-2 control-label">Name</label>  
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="productname" name="productname" placeholder="Product name" value=""></input>
+                            </div>
+                        </div>                        
+                        <div class="form-group">
+                            <label for="productmake" class="col-sm-2 control-label">Make</label>  
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="productmake" name="productmake" placeholder="Product make" value=""></input>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="categoryid" class="col-sm-2 control-label">Product Category</label>
+                            <div class="col-sm-4">                                
+                                <input type="checkbox" class="form-control" name="categoryid[]" value="01">01 - Clothing</input>
+                                <input type="checkbox" class="form-control" name="categoryid[]" value="02">02 - Outdoor</input>
+                                <input type="checkbox" class="form-control" name="categoryid[]" value="03">03 - Tools</input>                                
+                                <input type="checkbox" class="form-control" name="categoryid[]" value="04">04 - Apparel</input>
+                                <input type="checkbox" class="form-control" name="categoryid[]" value="05">05 - Hardware</input>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="productmodel" class="col-sm-2 control-label">Model</label>  
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="productmodel" name="productmodel" placeholder="Product model" value=""></input>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="productprice" class="col-sm-2 control-label">Price</label>  
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="productprice" name="productprice" placeholder="Product price" value=""></input>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="productdescription" class="col-sm-2 control-label">Description</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="productdescription" name="productdescription" placeholder="Product description" value=""></input>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="productimage" class="col-sm-2 control-label">Upload Image</label>
+                            <div class="col-sm-4">
+                                <input type="file" class="form-control" id="productimage" name="productimage"></input>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <input id="submit" name="submit" type="submit" value="Submit" class="btn btn-primary"></input>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>j.m. rains online </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="bootstrap/bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
